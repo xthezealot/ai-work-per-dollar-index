@@ -62,21 +62,22 @@ Curation applied at fetch time (config tables at the top of the script):
   Plans whose `price_usd` is just a currency conversion (GLM/Zhipu, Kimi, MiniMax,
   Aliyun CN plans, all CNY) are excluded — their real international prices come
   from `pricing_extra.csv` instead.
-- `EFFORT_WHITELIST` — per model, the only thinking levels kept.
+- **Inclusion rule (data-driven)** — a row is emitted only when its
+  (`model`, `effort`) exists in `data/aa_tok_per_task.csv`. There is no hardcoded
+  model list: adding a row there makes every plan carrying that model + effort
+  appear on the next fetch (given the repo or `SCORE_OVERRIDES` provides a score).
 - `VARIANT_PREFERENCE` — canonical vs dated snapshot benchmark rows (DeepSeek V4
   Flash / V4 Pro use the newer `0731` / `0813` snapshots). Dated variants of other
   models are dropped.
 - `SCORE_OVERRIDES` — manually verified scores for models the repo has no score
   for (currently `qwen3.8-flash: 40`).
 - Metered (pay-per-token) API rows are skipped — no monthly fee.
-- Rows whose (model, effort) has no entry in `data/aa_tok_per_task.csv` are
-  omitted: no tokens-per-task value ⇒ no result.
 - Finally `pricing_extra.csv` is merged in: rows sharing (`id`, `effort`)
   **overwrite** the fetched row, the rest are **appended**.
 
-Known gap: the repo replaced OpenCode Go's `deepseek-v4-flash` with
-`deepseek-v4.1-flash`; add it to `EFFORT_WHITELIST` and `data/aa_tok_per_task.csv`
-when AA data for it is available.
+DeepSeek V4.1 Flash has no AA score in the repo yet, so its repo points stay out;
+the plans carrying it (OpenCode Go, Command Code GOAT) are covered by
+`pricing_extra.csv` rows with the AA-extracted score instead.
 
 ### `data/aa_tok_per_task.csv` (manual)
 

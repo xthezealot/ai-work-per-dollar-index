@@ -9,11 +9,11 @@ Source: https://github.com/FeiZhuLulu/real-api-pricing
 
 All curation happens here, so work_per_dollar.py stays a pure calculator:
   * only points billed in USD or EUR are kept
-  * only models / thinking levels in EFFORT_WHITELIST are kept
+  * a row is emitted only when its (model, effort) exists in
+    data/aa_tok_per_task.csv — that file is the model list; there is no
+    hardcoded one. Models without AA tokens-per-task data are omitted
   * VARIANT_PREFERENCE picks canonical vs dated snapshot benchmark rows
   * estimated scores are dropped; SCORE_OVERRIDES fills missing scores
-  * rows are joined with data/aa_tok_per_task.csv; a row without a
-    tokens-per-task value there is omitted entirely
   * data/pricing_extra.csv is merged in last (rows sharing an id+effort
     overwrite the fetched row, the rest are appended), so work_per_dollar.py
     has this single CSV to read
@@ -53,19 +53,6 @@ KEY_FIELDS = ("id", "effort")
 # ---------------------------------------------------------------------------
 # Curation config — edit here when new models / benchmark data arrive.
 # ---------------------------------------------------------------------------
-
-# Allowed thinking levels per model (normalized: lowercase slug, "none" when
-# the provider exposes no effort selector). Anything else is dropped.
-EFFORT_WHITELIST: dict[str, set[str]] = {
-    "deepseek-v4-flash": {"max"},
-    "deepseek-v4-pro": {"max"},
-    "glm-5.3": {"max"},
-    "glm-5.3-flash": {"none"},
-    "gpt-5.6-luna": {"max"},
-    "gpt-5.6-sol": {"medium", "high", "xhigh"},
-    "grok-4.6": {"medium", "high", "xhigh"},
-    "qwen3.8-flash": {"none"},
-}
 
 # Manually verified AA intelligence scores for models the repo has no score
 # for (the repo never invents scores; neither do we beyond this table).
@@ -185,29 +172,28 @@ def benchmark_rows_for_board(bench: list[dict]) -> dict[str, list[dict]]:
 
 
 def curate_point(point: dict, bench_rows: list[dict] | None) -> list[tuple[str, float]]:
-    """Return the (effort, score) candidates kept for one point."""
-    slug = norm_model(point["model"])
-    allowed = EFFORT_WHITELIST.get(slug)
-    if allowed is None:
-        return []
+    """Return the (effort, score) candidates kept for one point.
 
+    A candidate is a benchmark row of the preferred variant that carries a real
+    score (repo score or SCORE_OVERRIDES). Whether the row is actually emitted
+    is decided later by the tok_per_task join — that file is the model list.
+    """
+    slug = norm_model(point["model"])
     kept: list[tuple[str, float]] = []
     prefer_dated = VARIANT_PREFERENCE.get(slug) == "dated"
     for row in bench_rows or []:
         is_dated = bool(DATED_VARIANT_RE.search(row["variant"]))
         if is_dated != prefer_dated:
             continue
-        effort = norm_effort(row["reasoning_effort"])
-        if effort not in allowed:
-            continue
         if row["score_is_estimated"].strip().lower() == "true":
             continue
+        effort = norm_effort(row["reasoning_effort"])
         score_raw = row["score"].strip()
         score = float(score_raw) if score_raw else SCORE_OVERRIDES.get(slug)
         if score is not None:
             kept.append((effort, score))
 
-    if not bench_rows and "none" in allowed:
+    if not bench_rows:
         # Point never scored on this board (no effort selector, no score yet).
         score_raw = (point.get("aa_intelligence_index__score") or "").strip()
         score = float(score_raw) if score_raw else SCORE_OVERRIDES.get(slug)
@@ -223,7 +209,7 @@ def main() -> int:
     tok_per_task = load_tok_per_task()
 
     rows = []
-    stats = {"non_usd_eur": 0, "outside_whitelist": 0, "metered": 0, "no_tok_per_task": 0}
+    stats = {"non_usd_eur": 0, "metered": 0, "no_score": 0, "no_tok_per_task": 0}
     for point in points:
         if currencies.get(point["id"]) not in KEEP_CURRENCIES:
             stats["non_usd_eur"] += 1
@@ -233,7 +219,7 @@ def main() -> int:
             continue
         candidates = curate_point(point, bench_by_point.get(point["id"]))
         if not candidates:
-            stats["outside_whitelist"] += 1
+            stats["no_score"] += 1  # no benchmark row / no override for this point
             continue
         for effort, score in candidates:
             tpt = tok_per_task.get((norm_model(point["model"]), effort))
@@ -263,8 +249,8 @@ def main() -> int:
     print(f"{len(rows)} rows written to {OUTPUT_CSV.relative_to(BASE_DIR)}")
     print(f"pricing_extra merged: {appended} rows appended, {overridden} rows overwritten")
     print(f"skipped: {stats['non_usd_eur']} points not billed in USD/EUR, "
-          f"{stats['outside_whitelist']} points outside EFFORT_WHITELIST, "
           f"{stats['metered']} metered (no monthly fee), "
+          f"{stats['no_score']} points without a usable AA score, "
           f"{stats['no_tok_per_task']} rows without a tok_per_task value")
     return 0
 

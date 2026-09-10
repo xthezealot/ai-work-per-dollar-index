@@ -11,6 +11,12 @@ chatgpt_pro_5x::gpt-5.6-luna,GPT 5.6 Luna,max,ChatGPT Pro 5x,100,0.00266,37.5048
 chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,high,ChatGPT Pro 5x,100,0.03247,42.4992,13250
 chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,medium,ChatGPT Pro 5x,100,0.03247,39.4846,7874
 chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,xhigh,ChatGPT Pro 5x,100,0.03247,44.138,19576
+claude_max_20x::claude-opus-5,Claude Opus 5,high,Claude Max 20x (9/14+),200,0.01274,48.2372,46239
+claude_max_20x::claude-opus-5,Claude Opus 5,medium,Claude Max 20x (9/14+),200,0.01274,45.0576,28977
+claude_max_20x::claude-opus-5,Claude Opus 5,xhigh,Claude Max 20x (9/14+),200,0.01274,49.6515,60655
+claude_max_5x::claude-opus-5,Claude Opus 5,high,Claude Max 5x (9/14+),100,0.01274,48.2372,46239
+claude_max_5x::claude-opus-5,Claude Opus 5,medium,Claude Max 5x (9/14+),100,0.01274,45.0576,28977
+claude_max_5x::claude-opus-5,Claude Opus 5,xhigh,Claude Max 5x (9/14+),100,0.01274,49.6515,60655
 command_code_goat::deepseek-v4-pro,DeepSeek V4 Pro,max,Command Code GOAT,10,0.02129,36.2829,55154
 command_code_goat::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Command Code GOAT,10,0.00206,39.545442472527,88574
 command_code_goat::glm-5.3,GLM 5.3,max,Command Code GOAT,10,0.14948,44.8557,71178
