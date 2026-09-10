@@ -1,0 +1,13 @@
+model,effort,tok_per_task
+gpt-5.6-luna,max,41235
+gpt-5.6-sol,medium,7874
+gpt-5.6-sol,high,13250
+gpt-5.6-sol,xhigh,19576
+grok-4.6,medium,28466
+grok-4.6,high,35835
+grok-4.6,xhigh,37608
+deepseek-v4-flash,max,62054
+deepseek-v4-pro,max,55154
+glm-5.3,max,71178
+glm-5.3-flash,none,68673
+qwen3.8-flash,none,107885
