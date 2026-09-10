@@ -85,6 +85,15 @@ an effort selector), `tok_per_task` (output tokens = answer + reasoning per AA
 benchmark task). Fill it for the models and thinking levels you care about —
 unfilled combinations simply don't produce results.
 
+To get exact values for a model, use the project skill
+`.agents/skills/aa-exact-score/`: it extracts the full-precision AA Intelligence
+Index and tokens-per-task straight from the payloads embedded in
+artificialanalysis.ai pages (the site UI rounds scores). Usage:
+
+```sh
+python3 .agents/skills/aa-exact-score/scripts/extract.py deepseek-v4-1-flash --variant max
+```
+
 ### `data/pricing_extra.csv` (manual)
 
 Merge rule (applied by `fetch_pricing.py` when writing `pricing_gen.csv`): a row

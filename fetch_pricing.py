@@ -57,13 +57,13 @@ KEY_FIELDS = ("id", "effort")
 # Allowed thinking levels per model (normalized: lowercase slug, "none" when
 # the provider exposes no effort selector). Anything else is dropped.
 EFFORT_WHITELIST: dict[str, set[str]] = {
-    "gpt-5.6-luna": {"max"},
-    "gpt-5.6-sol": {"medium", "high", "xhigh"},
-    "grok-4.6": {"medium", "high", "xhigh"},
     "deepseek-v4-flash": {"max"},
     "deepseek-v4-pro": {"max"},
     "glm-5.3": {"max"},
     "glm-5.3-flash": {"none"},
+    "gpt-5.6-luna": {"max"},
+    "gpt-5.6-sol": {"medium", "high", "xhigh"},
+    "grok-4.6": {"medium", "high", "xhigh"},
     "qwen3.8-flash": {"none"},
 }
 

@@ -12,6 +12,7 @@ chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,high,ChatGPT Pro 5x,100,0.03247,42.4992,
 chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,medium,ChatGPT Pro 5x,100,0.03247,39.4846,7874
 chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,xhigh,ChatGPT Pro 5x,100,0.03247,44.138,19576
 command_code_goat::deepseek-v4-pro,DeepSeek V4 Pro,max,Command Code GOAT,10,0.02129,36.2829,55154
+command_code_goat::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Command Code GOAT,10,0.00206,39.545442472527,88574
 command_code_goat::glm-5.3,GLM 5.3,max,Command Code GOAT,10,0.14948,44.8557,71178
 command_code_goat::glm-5.3-flash,GLM 5.3 Flash,none,Command Code GOAT,10,0.00856,41.9074,68673
 command_code_goat::gpt-5.6-luna,GPT 5.6 Luna,max,Command Code GOAT,10,0.014,37.5048,41235
@@ -61,6 +62,7 @@ ollama_pro::deepseek-v4-pro,DeepSeek V4 Pro,max,Ollama Pro,20,0.01419,36.2829,55
 ollama_pro::glm-5.3,GLM 5.3,max,Ollama Pro,20,0.09965,44.8557,71178
 ollama_pro::glm-5.3-flash,GLM 5.3 Flash,none,Ollama Pro,20,0.01141,41.9074,68673
 opencode_go::deepseek-v4-pro,DeepSeek V4 Pro,max,OpenCode Go,10,0.02838,36.2829,55154
+opencode_go::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,OpenCode Go,10,0.0055,39.545442472527,88574
 opencode_go::glm-5.3,GLM 5.3,max,OpenCode Go,10,0.1992,44.8557,71178
 opencode_go::glm-5.3-flash,GLM 5.3 Flash,none,OpenCode Go,10,0.02282,41.9074,68673
 opencode_go::gpt-5.6-luna,GPT 5.6 Luna,max,OpenCode Go,10,0.01867,37.5048,41235

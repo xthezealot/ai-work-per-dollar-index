@@ -1,25 +1,27 @@
 id,model,effort,plan,price_usd,real_usd_per_mtok,score,tok_per_task
-glm_coding_max_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Max (yearly),117.6,0.00873,41.9074,68673
-glm_coding_pro_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro (yearly),56,0.0097,41.9074,68673
-glm_coding_lite_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Lite (yearly),12.6,0.0131,41.9074,68673
-cursor_pro_plus_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Pro+ (yearly),48,0.02326,44.2702,37608
+command_code_goat::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Command Code GOAT,10,0.00206,39.545442472527,88574
 cursor_pro_plus_yearly::grok-4.6,Grok 4.6,high,Cursor Pro+ (yearly),48,0.02326,44.405,35835
 cursor_pro_plus_yearly::grok-4.6,Grok 4.6,medium,Cursor Pro+ (yearly),48,0.02326,43.0112,28466
-glm_coding_max_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Max (yearly),117.6,0.02646,44.8557,71178
-glm_coding_pro_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Pro (yearly),56,0.0294,44.8557,71178
-cursor_pro_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Pro (yearly),16,0.03404,44.2702,37608
+cursor_pro_plus_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Pro+ (yearly),48,0.02326,44.2702,37608
 cursor_pro_yearly::grok-4.6,Grok 4.6,high,Cursor Pro (yearly),16,0.03404,44.405,35835
 cursor_pro_yearly::grok-4.6,Grok 4.6,medium,Cursor Pro (yearly),16,0.03404,43.0112,28466
-supergrok_plus_yearly::grok-4.6,Grok 4.6,xhigh,SuperGrok Plus (yearly),83.33,0.04085,44.2702,37608
+cursor_pro_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Pro (yearly),16,0.03404,44.2702,37608
+glm_coding_lite_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Lite,18,0.05678,44.8557,71178
+glm_coding_lite_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Lite,18,0.01871,41.9074,68673
+glm_coding_lite_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Lite (yearly),12.6,0.03975,44.8557,71178
+glm_coding_lite_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Lite (yearly),12.6,0.0131,41.9074,68673
+glm_coding_max_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Max,168,0.0378,44.8557,71178
+glm_coding_max_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Max,168,0.01247,41.9074,68673
+glm_coding_max_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Max (yearly),117.6,0.02646,44.8557,71178
+glm_coding_max_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Max (yearly),117.6,0.00873,41.9074,68673
+glm_coding_pro_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Pro,80,0.04199,44.8557,71178
+glm_coding_pro_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro,80,0.01386,41.9074,68673
+glm_coding_pro_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Pro (yearly),56,0.0294,44.8557,71178
+glm_coding_pro_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro (yearly),56,0.0097,41.9074,68673
+opencode_go::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,OpenCode Go,10,0.0055,39.545442472527,88574
 supergrok_plus_yearly::grok-4.6,Grok 4.6,high,SuperGrok Plus (yearly),83.33,0.04085,44.405,35835
 supergrok_plus_yearly::grok-4.6,Grok 4.6,medium,SuperGrok Plus (yearly),83.33,0.04085,43.0112,28466
-glm_coding_lite_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Lite (yearly),12.6,0.03975,44.8557,71178
-supergrok_yearly::grok-4.6,Grok 4.6,xhigh,SuperGrok (yearly),25,0.04912,44.2702,37608
+supergrok_plus_yearly::grok-4.6,Grok 4.6,xhigh,SuperGrok Plus (yearly),83.33,0.04085,44.2702,37608
 supergrok_yearly::grok-4.6,Grok 4.6,high,SuperGrok (yearly),25,0.04912,44.405,35835
 supergrok_yearly::grok-4.6,Grok 4.6,medium,SuperGrok (yearly),25,0.04912,43.0112,28466
-glm_coding_max_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Max,168,0.01247,41.9074,68673
-glm_coding_pro_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro,80,0.01386,41.9074,68673
-glm_coding_lite_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Lite,18,0.01871,41.9074,68673
-glm_coding_max_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Max,168,0.0378,44.8557,71178
-glm_coding_pro_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Pro,80,0.04199,44.8557,71178
-glm_coding_lite_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Lite,18,0.05678,44.8557,71178
+supergrok_yearly::grok-4.6,Grok 4.6,xhigh,SuperGrok (yearly),25,0.04912,44.2702,37608
