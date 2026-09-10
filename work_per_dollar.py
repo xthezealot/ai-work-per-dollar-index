@@ -102,6 +102,8 @@ def parse_args(argv=None) -> argparse.Namespace:
                         help="hide results providing fewer than N tasks/month (default: no limit)")
     parser.add_argument("--min-score", type=nonneg_float, default=0.0, metavar="N",
                         help="hide results with an AA intelligence score below N (default: no limit)")
+    parser.add_argument("--max-price", type=nonneg_float, default=0.0, metavar="N",
+                        help="hide results costing more than N per month (default: no limit)")
     return parser.parse_args(argv)
 
 
@@ -150,6 +152,11 @@ def main(argv=None) -> int:
         ranked = [r for r in ranked if r["score"] >= args.min_score]
         filter_notes.append(
             f"--min-score: hid {before - len(ranked)} of {before} results below {args.min_score:g} score")
+    if args.max_price > 0:
+        before = len(ranked)
+        ranked = [r for r in ranked if r["fee"] <= args.max_price]
+        filter_notes.append(
+            f"--max-price: hid {before - len(ranked)} of {before} results above ${args.max_price:g}/month")
 
     ranked.sort(key=lambda r: r["value"], reverse=True)
 

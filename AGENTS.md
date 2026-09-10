@@ -13,7 +13,8 @@ value          = AA intelligence score * tasks/month / price_usd
 python3 work_per_dollar.py                                  # full ranking
 python3 work_per_dollar.py --min-tasks 50000                # hide results below 50k tasks/month
 python3 work_per_dollar.py --min-score 42                   # hide results scoring below 42
-python3 work_per_dollar.py --min-tasks 50000 --min-score 42 # combine both filters
+python3 work_per_dollar.py --max-price 20                   # hide results costing more than $20/month
+python3 work_per_dollar.py --min-tasks 50000 --min-score 42 # combine filters
 python3 fetch_pricing.py                                    # refresh data/pricing_gen.csv from source
 ```
 
