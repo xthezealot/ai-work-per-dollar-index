@@ -1,6 +1,8 @@
 model,effort,tok_per_task
+claude-fable-5,none,66848
 claude-fable-5.1,high,38054
 claude-fable-5.1,low,21562
+claude-fable-5.1,max,78111
 claude-fable-5.1,medium,27888
 claude-fable-5.1,xhigh,60538
 claude-opus-5,high,46239

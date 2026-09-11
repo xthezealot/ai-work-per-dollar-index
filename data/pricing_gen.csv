@@ -26,9 +26,13 @@ chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,low,ChatGPT Pro 5x,100,0.04600,45.994499
 chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,max,ChatGPT Pro 5x,100,0.04600,52.814069395513,27206
 chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,medium,ChatGPT Pro 5x,100,0.04600,49.6685363034369,9590
 chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,xhigh,ChatGPT Pro 5x,100,0.04600,52.5059027108782,16901
+claude_max_20x::claude-fable-5,Claude Fable 5,none,Claude Max 20x (9/14+),200,0.1656,49.6994,66848
+claude_max_20x::claude-fable-5.1,Claude Fable 5.1,none,Claude Max 20x (9/14+),200,0.1656,53.3737509623252,78111
 claude_max_20x::claude-opus-5,Claude Opus 5,high,Claude Max 20x (9/14+),200,0.01274,48.2372,46239
 claude_max_20x::claude-opus-5,Claude Opus 5,medium,Claude Max 20x (9/14+),200,0.01274,45.0576,28977
 claude_max_20x::claude-opus-5,Claude Opus 5,xhigh,Claude Max 20x (9/14+),200,0.01274,49.6515,60655
+claude_max_5x::claude-fable-5,Claude Fable 5,none,Claude Max 5x (9/14+),100,0.10828,49.6994,66848
+claude_max_5x::claude-fable-5.1,Claude Fable 5.1,none,Claude Max 5x (9/14+),100,0.10828,53.3737509623252,78111
 claude_max_5x::claude-opus-5,Claude Opus 5,high,Claude Max 5x (9/14+),100,0.01274,48.2372,46239
 claude_max_5x::claude-opus-5,Claude Opus 5,medium,Claude Max 5x (9/14+),100,0.01274,45.0576,28977
 claude_max_5x::claude-opus-5,Claude Opus 5,xhigh,Claude Max 5x (9/14+),100,0.01274,49.6515,60655

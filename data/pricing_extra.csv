@@ -40,3 +40,5 @@ chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,medium,ChatGPT Pro 5x,100,0.04600,49.668
 chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,high,ChatGPT Pro 5x,100,0.04600,51.0480721636152,11795
 chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,xhigh,ChatGPT Pro 5x,100,0.04600,52.5059027108782,16901
 chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,max,ChatGPT Pro 5x,100,0.04600,52.814069395513,27206
+claude_max_20x::claude-fable-5.1,Claude Fable 5.1,none,Claude Max 20x (9/14+),200,0.1656,53.3737509623252,78111
+claude_max_5x::claude-fable-5.1,Claude Fable 5.1,none,Claude Max 5x (9/14+),100,0.10828,53.3737509623252,78111
