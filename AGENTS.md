@@ -109,7 +109,8 @@ whose (`id`, `effort`) matches a fetched row **overwrites** it; any other row is
   conversion).
 - **Yearly plans** (`<plan>_yearly::<model>` ids, `(yearly)` in plan name,
   effective monthly price under annual billing): Cursor Pro $16, Cursor Pro+ $48,
-  SuperGrok $25, SuperGrok Plus $83.33, GLM Coding Max $117.6, Pro $56, Lite $12.6.
+  Cursor Teams Premium $96 (usage pool 5/3× Pro+), SuperGrok $25, SuperGrok Plus
+  $83.33, GLM Coding Max $117.6, Pro $56, Lite $12.6.
 
 When adding rows here, `score` and `tok_per_task` must match the corresponding
 model + effort values (score from the repo/AA, tok_per_task from
