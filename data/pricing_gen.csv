@@ -1,61 +1,76 @@
 id,model,effort,plan,price_usd,real_usd_per_mtok,score,tok_per_task
-chatgpt_plus::gpt-5.6-luna,GPT 5.6 Luna,max,ChatGPT Plus,20,0.00266,37.5048,41235
-chatgpt_plus::gpt-5.6-sol,GPT 5.6 Sol,high,ChatGPT Plus,20,0.03247,42.4992,13250
-chatgpt_plus::gpt-5.6-sol,GPT 5.6 Sol,medium,ChatGPT Plus,20,0.03247,39.4846,7874
-chatgpt_plus::gpt-5.6-sol,GPT 5.6 Sol,xhigh,ChatGPT Plus,20,0.03247,44.138,19576
-chatgpt_plus::gpt-6-astra,GPT 6 Astra,high,ChatGPT Plus,20,0.12579,51.0480721636152,11795
-chatgpt_plus::gpt-6-astra,GPT 6 Astra,low,ChatGPT Plus,20,0.12579,45.9944993120341,4433
-chatgpt_plus::gpt-6-astra,GPT 6 Astra,max,ChatGPT Plus,20,0.12579,52.814069395513,27206
-chatgpt_plus::gpt-6-astra,GPT 6 Astra,medium,ChatGPT Plus,20,0.12579,49.6685363034369,9590
-chatgpt_plus::gpt-6-astra,GPT 6 Astra,xhigh,ChatGPT Plus,20,0.12579,52.5059027108782,16901
-chatgpt_pro_20x::gpt-5.6-luna,GPT 5.6 Luna,max,ChatGPT Pro 20x,200,0.00133,37.5048,41235
-chatgpt_pro_20x::gpt-5.6-sol,GPT 5.6 Sol,high,ChatGPT Pro 20x,200,0.01623,42.4992,13250
-chatgpt_pro_20x::gpt-5.6-sol,GPT 5.6 Sol,medium,ChatGPT Pro 20x,200,0.01623,39.4846,7874
-chatgpt_pro_20x::gpt-5.6-sol,GPT 5.6 Sol,xhigh,ChatGPT Pro 20x,200,0.01623,44.138,19576
-chatgpt_pro_20x::gpt-6-astra,GPT 6 Astra,high,ChatGPT Pro 20x,200,0.04160,51.0480721636152,11795
-chatgpt_pro_20x::gpt-6-astra,GPT 6 Astra,low,ChatGPT Pro 20x,200,0.04160,45.9944993120341,4433
-chatgpt_pro_20x::gpt-6-astra,GPT 6 Astra,max,ChatGPT Pro 20x,200,0.04160,52.814069395513,27206
-chatgpt_pro_20x::gpt-6-astra,GPT 6 Astra,medium,ChatGPT Pro 20x,200,0.04160,49.6685363034369,9590
-chatgpt_pro_20x::gpt-6-astra,GPT 6 Astra,xhigh,ChatGPT Pro 20x,200,0.04160,52.5059027108782,16901
-chatgpt_pro_5x::gpt-5.6-luna,GPT 5.6 Luna,max,ChatGPT Pro 5x,100,0.00266,37.5048,41235
-chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,high,ChatGPT Pro 5x,100,0.03247,42.4992,13250
-chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,medium,ChatGPT Pro 5x,100,0.03247,39.4846,7874
-chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,xhigh,ChatGPT Pro 5x,100,0.03247,44.138,19576
-chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,high,ChatGPT Pro 5x,100,0.12579,51.0480721636152,11795
-chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,low,ChatGPT Pro 5x,100,0.12579,45.9944993120341,4433
-chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,max,ChatGPT Pro 5x,100,0.12579,52.814069395513,27206
-chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,medium,ChatGPT Pro 5x,100,0.12579,49.6685363034369,9590
-chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,xhigh,ChatGPT Pro 5x,100,0.12579,52.5059027108782,16901
-claude_max_20x::claude-fable-5,Claude Fable 5,none,Claude Max 20x (9/14+),200,0.1656,49.6994,66848
-claude_max_20x::claude-opus-5,Claude Opus 5,high,Claude Max 20x (9/14+),200,0.01274,48.2372,46239
-claude_max_20x::claude-opus-5,Claude Opus 5,medium,Claude Max 20x (9/14+),200,0.01274,45.0576,28977
-claude_max_20x::claude-opus-5,Claude Opus 5,xhigh,Claude Max 20x (9/14+),200,0.01274,49.6515,60655
-claude_max_5x::claude-fable-5,Claude Fable 5,none,Claude Max 5x (9/14+),100,0.10828,49.6994,66848
-claude_max_5x::claude-opus-5,Claude Opus 5,high,Claude Max 5x (9/14+),100,0.01274,48.2372,46239
-claude_max_5x::claude-opus-5,Claude Opus 5,medium,Claude Max 5x (9/14+),100,0.01274,45.0576,28977
-claude_max_5x::claude-opus-5,Claude Opus 5,xhigh,Claude Max 5x (9/14+),100,0.01274,49.6515,60655
-command_code_goat::deepseek-v4-pro,DeepSeek V4 Pro,max,Command Code GOAT,10,0.02129,36.2829,55154
-command_code_goat::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Command Code GOAT,10,0.00206,39.545442472527,88574
-command_code_goat::gemini-3.8-flash,Gemini 3.8 Flash,high,Command Code GOAT,10,0.05118,41.1864,71003
-command_code_goat::glm-5.3,GLM 5.3,max,Command Code GOAT,10,0.14948,44.8557,71178
-command_code_goat::glm-5.3-flash,GLM 5.3 Flash,none,Command Code GOAT,10,0.00856,41.9074,68673
-command_code_goat::gpt-5.6-luna,GPT 5.6 Luna,max,Command Code GOAT,10,0.014,37.5048,41235
-command_code_goat::gpt-5.6-sol,GPT 5.6 Sol,high,Command Code GOAT,10,0.1,42.4992,13250
-command_code_goat::gpt-5.6-sol,GPT 5.6 Sol,medium,Command Code GOAT,10,0.1,39.4846,7874
-command_code_goat::gpt-5.6-sol,GPT 5.6 Sol,xhigh,Command Code GOAT,10,0.1,44.138,19576
-command_code_goat::grok-4.6,Grok 4.6,high,Command Code GOAT,10,0.27548,44.405,35835
-command_code_goat::grok-4.6,Grok 4.6,medium,Command Code GOAT,10,0.27548,43.0112,28466
-command_code_goat::grok-4.6,Grok 4.6,xhigh,Command Code GOAT,10,0.27548,44.2702,37608
-command_code_goat::kimi-k3,Kimi K3,max,Command Code GOAT,10,0.20492,43.7842,48455
-command_code_goat::muse-spark-1.3,Muse Spark 1.3,max,Command Code GOAT,10,0.09398,48.169,60200
-command_code_goat::muse-spark-1.3,Muse Spark 1.3,xhigh,Command Code GOAT,10,0.09398,45.1612,54513
+chatgpt_plus::gpt-5.6-luna,GPT 5.6 Luna,max,ChatGPT Plus,20,0.00266,37.3244,41235
+chatgpt_plus::gpt-5.6-sol,GPT 5.6 Sol,high,ChatGPT Plus,20,0.03247,42.3461,13250
+chatgpt_plus::gpt-5.6-sol,GPT 5.6 Sol,medium,ChatGPT Plus,20,0.03247,39.2364,7874
+chatgpt_plus::gpt-5.6-sol,GPT 5.6 Sol,xhigh,ChatGPT Plus,20,0.03247,44.0089,19576
+chatgpt_plus::gpt-6-astra,GPT-6 Astra,high,ChatGPT Plus,20,0.12579,50.9191,11795
+chatgpt_plus::gpt-6-astra,GPT-6 Astra,low,ChatGPT Plus,20,0.12579,45.7819,4433
+chatgpt_plus::gpt-6-astra,GPT-6 Astra,max,ChatGPT Plus,20,0.12579,52.6737,27206
+chatgpt_plus::gpt-6-astra,GPT-6 Astra,medium,ChatGPT Plus,20,0.12579,49.5704,9590
+chatgpt_plus::gpt-6-astra,GPT-6 Astra,xhigh,ChatGPT Plus,20,0.12579,52.3863,16901
+chatgpt_pro_20x::gpt-5.6-luna,GPT 5.6 Luna,max,ChatGPT Pro 20x,200,0.00133,37.3244,41235
+chatgpt_pro_20x::gpt-5.6-sol,GPT 5.6 Sol,high,ChatGPT Pro 20x,200,0.0155,42.3461,13250
+chatgpt_pro_20x::gpt-5.6-sol,GPT 5.6 Sol,medium,ChatGPT Pro 20x,200,0.0155,39.2364,7874
+chatgpt_pro_20x::gpt-5.6-sol,GPT 5.6 Sol,xhigh,ChatGPT Pro 20x,200,0.0155,44.0089,19576
+chatgpt_pro_20x::gpt-6-astra,GPT-6 Astra,high,ChatGPT Pro 20x,200,0.05247,50.9191,11795
+chatgpt_pro_20x::gpt-6-astra,GPT-6 Astra,low,ChatGPT Pro 20x,200,0.05247,45.7819,4433
+chatgpt_pro_20x::gpt-6-astra,GPT-6 Astra,max,ChatGPT Pro 20x,200,0.05247,52.6737,27206
+chatgpt_pro_20x::gpt-6-astra,GPT-6 Astra,medium,ChatGPT Pro 20x,200,0.05247,49.5704,9590
+chatgpt_pro_20x::gpt-6-astra,GPT-6 Astra,xhigh,ChatGPT Pro 20x,200,0.05247,52.3863,16901
+chatgpt_pro_5x::gpt-5.6-luna,GPT 5.6 Luna,max,ChatGPT Pro 5x,100,0.00266,37.3244,41235
+chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,high,ChatGPT Pro 5x,100,0.03247,42.3461,13250
+chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,medium,ChatGPT Pro 5x,100,0.03247,39.2364,7874
+chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,xhigh,ChatGPT Pro 5x,100,0.03247,44.0089,19576
+chatgpt_pro_5x::gpt-6-astra,GPT-6 Astra,high,ChatGPT Pro 5x,100,0.10989,50.9191,11795
+chatgpt_pro_5x::gpt-6-astra,GPT-6 Astra,low,ChatGPT Pro 5x,100,0.10989,45.7819,4433
+chatgpt_pro_5x::gpt-6-astra,GPT-6 Astra,max,ChatGPT Pro 5x,100,0.10989,52.6737,27206
+chatgpt_pro_5x::gpt-6-astra,GPT-6 Astra,medium,ChatGPT Pro 5x,100,0.10989,49.5704,9590
+chatgpt_pro_5x::gpt-6-astra,GPT-6 Astra,xhigh,ChatGPT Pro 5x,100,0.10989,52.3863,16901
+claude_max_20x::claude-fable-5,Claude Fable 5,none,Claude Max 20x (9/14+),200,0.1656,49.6258,66848
+claude_max_20x::claude-fable-5.1,Claude Fable 5.1,high,Claude Max 20x (9/14+),200,0.11574,51.1516,38054
+claude_max_20x::claude-fable-5.1,Claude Fable 5.1,low,Claude Max 20x (9/14+),200,0.11574,46.8163,21562
+claude_max_20x::claude-fable-5.1,Claude Fable 5.1,max,Claude Max 20x (9/14+),200,0.11574,53.3549,78111
+claude_max_20x::claude-fable-5.1,Claude Fable 5.1,medium,Claude Max 20x (9/14+),200,0.11574,48.9206,27888
+claude_max_20x::claude-fable-5.1,Claude Fable 5.1,xhigh,Claude Max 20x (9/14+),200,0.11574,53.2033,60538
+claude_max_20x::claude-opus-5,Claude Opus 5,high,Claude Max 20x (9/14+),200,0.01274,48.1219,46239
+claude_max_20x::claude-opus-5,Claude Opus 5,medium,Claude Max 20x (9/14+),200,0.01274,44.8253,28977
+claude_max_20x::claude-opus-5,Claude Opus 5,xhigh,Claude Max 20x (9/14+),200,0.01274,49.6774,60655
+claude_max_5x::claude-fable-5,Claude Fable 5,none,Claude Max 5x (9/14+),100,0.10828,49.6258,66848
+claude_max_5x::claude-fable-5.1,Claude Fable 5.1,high,Claude Max 5x (9/14+),100,0.11575,51.1516,38054
+claude_max_5x::claude-fable-5.1,Claude Fable 5.1,low,Claude Max 5x (9/14+),100,0.11575,46.8163,21562
+claude_max_5x::claude-fable-5.1,Claude Fable 5.1,max,Claude Max 5x (9/14+),100,0.11575,53.3549,78111
+claude_max_5x::claude-fable-5.1,Claude Fable 5.1,medium,Claude Max 5x (9/14+),100,0.11575,48.9206,27888
+claude_max_5x::claude-fable-5.1,Claude Fable 5.1,xhigh,Claude Max 5x (9/14+),100,0.11575,53.2033,60538
+claude_max_5x::claude-opus-5,Claude Opus 5,high,Claude Max 5x (9/14+),100,0.01274,48.1219,46239
+claude_max_5x::claude-opus-5,Claude Opus 5,medium,Claude Max 5x (9/14+),100,0.01274,44.8253,28977
+claude_max_5x::claude-opus-5,Claude Opus 5,xhigh,Claude Max 5x (9/14+),100,0.01274,49.6774,60655
+claude_pro::claude-opus-5,Claude Opus 5,high,Claude Pro,20,0.01065,48.1219,46239
+claude_pro::claude-opus-5,Claude Opus 5,medium,Claude Pro,20,0.01065,44.8253,28977
+claude_pro::claude-opus-5,Claude Opus 5,xhigh,Claude Pro,20,0.01065,49.6774,60655
+command_code_goat::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Command Code GOAT,10,0.00206,39.4562,88574
+command_code_goat::gemini-3.8-flash,Gemini 3.8 Flash,high,Command Code GOAT,10,0.05118,40.9262,71003
+command_code_goat::glm-5.3,GLM 5.3,max,Command Code GOAT,10,0.14948,44.7774,71178
+command_code_goat::glm-5.3-flash,GLM 5.3 Flash,none,Command Code GOAT,10,0.00856,41.8075,68673
+command_code_goat::gpt-5.6-luna,GPT 5.6 Luna,max,Command Code GOAT,10,0.014,37.3244,41235
+command_code_goat::gpt-5.6-sol,GPT 5.6 Sol,high,Command Code GOAT,10,0.1,42.3461,13250
+command_code_goat::gpt-5.6-sol,GPT 5.6 Sol,medium,Command Code GOAT,10,0.1,39.2364,7874
+command_code_goat::gpt-5.6-sol,GPT 5.6 Sol,xhigh,Command Code GOAT,10,0.1,44.0089,19576
+command_code_goat::grok-4.6,Grok 4.6,high,Command Code GOAT,10,0.27548,44.3113,35835
+command_code_goat::grok-4.6,Grok 4.6,medium,Command Code GOAT,10,0.27548,42.8363,28466
+command_code_goat::grok-4.6,Grok 4.6,xhigh,Command Code GOAT,10,0.27548,44.1998,37608
+command_code_goat::grok-4.7,Grok 4.7,high,Command Code GOAT,10,0.27548,46.3322,65902
+command_code_goat::grok-4.7,Grok 4.7,xhigh,Command Code GOAT,10,0.27548,46.4466,80561
+command_code_goat::kimi-k3,Kimi K3,max,Command Code GOAT,10,0.20492,43.5938,48455
+command_code_goat::mimo-v2.6-pro,MiMo V2.6 Pro,none,Command Code GOAT,10,0.00795,46,64276
+command_code_goat::muse-spark-1.3,Muse Spark 1.3,max,Command Code GOAT,10,0.09398,48.0923,60200
+command_code_goat::muse-spark-1.3,Muse Spark 1.3,xhigh,Command Code GOAT,10,0.09398,45.0733,54513
 command_code_goat::qwen3.8-flash,Qwen3.8 Flash,none,Command Code GOAT,10,0.01034,40,107885
-cursor_pro::grok-4.6,Grok 4.6,high,Cursor Pro,20,0.04255,44.405,35835
-cursor_pro::grok-4.6,Grok 4.6,medium,Cursor Pro,20,0.04255,43.0112,28466
-cursor_pro::grok-4.6,Grok 4.6,xhigh,Cursor Pro,20,0.04255,44.2702,37608
-cursor_pro_plus::grok-4.6,Grok 4.6,high,Cursor Pro+,60,0.02908,44.405,35835
-cursor_pro_plus::grok-4.6,Grok 4.6,medium,Cursor Pro+,60,0.02908,43.0112,28466
-cursor_pro_plus::grok-4.6,Grok 4.6,xhigh,Cursor Pro+,60,0.02908,44.2702,37608
+cursor_pro::grok-4.6,Grok 4.6,high,Cursor Pro,20,0.04255,44.3113,35835
+cursor_pro::grok-4.6,Grok 4.6,medium,Cursor Pro,20,0.04255,42.8363,28466
+cursor_pro::grok-4.6,Grok 4.6,xhigh,Cursor Pro,20,0.04255,44.1998,37608
+cursor_pro_plus::grok-4.6,Grok 4.6,high,Cursor Pro+,60,0.02908,44.3113,35835
+cursor_pro_plus::grok-4.6,Grok 4.6,medium,Cursor Pro+,60,0.02908,42.8363,28466
+cursor_pro_plus::grok-4.6,Grok 4.6,xhigh,Cursor Pro+,60,0.02908,44.1998,37608
 cursor_pro_plus_yearly::grok-4.6,Grok 4.6,high,Cursor Pro+ (yearly),48,0.02326,44.405,35835
 cursor_pro_plus_yearly::grok-4.6,Grok 4.6,medium,Cursor Pro+ (yearly),48,0.02326,43.0112,28466
 cursor_pro_plus_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Pro+ (yearly),48,0.02326,44.2702,37608
@@ -65,12 +80,17 @@ cursor_pro_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Pro (yearly),16,0.03404,44.270
 cursor_teams_premium_yearly::grok-4.6,Grok 4.6,high,Cursor Teams Premium (yearly),96,0.02791,44.405,35835
 cursor_teams_premium_yearly::grok-4.6,Grok 4.6,medium,Cursor Teams Premium (yearly),96,0.02791,43.0112,28466
 cursor_teams_premium_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Teams Premium (yearly),96,0.02791,44.2702,37608
-cursor_ultra::grok-4.6,Grok 4.6,high,Cursor Ultra,200,0.02585,44.405,35835
-cursor_ultra::grok-4.6,Grok 4.6,medium,Cursor Ultra,200,0.02585,43.0112,28466
-cursor_ultra::grok-4.6,Grok 4.6,xhigh,Cursor Ultra,200,0.02585,44.2702,37608
-cursor_ultra_fast::grok-4.6,Grok 4.6,high,Cursor Ultra (Fast),200,0.06506,44.405,35835
-cursor_ultra_fast::grok-4.6,Grok 4.6,medium,Cursor Ultra (Fast),200,0.06506,43.0112,28466
-cursor_ultra_fast::grok-4.6,Grok 4.6,xhigh,Cursor Ultra (Fast),200,0.06506,44.2702,37608
+cursor_ultra::grok-4.6,Grok 4.6,high,Cursor Ultra,200,0.02585,44.3113,35835
+cursor_ultra::grok-4.6,Grok 4.6,medium,Cursor Ultra,200,0.02585,42.8363,28466
+cursor_ultra::grok-4.6,Grok 4.6,xhigh,Cursor Ultra,200,0.02585,44.1998,37608
+cursor_ultra_fast::grok-4.6,Grok 4.6,high,Cursor Ultra (Fast),200,0.06506,44.3113,35835
+cursor_ultra_fast::grok-4.6,Grok 4.6,medium,Cursor Ultra (Fast),200,0.06506,42.8363,28466
+cursor_ultra_fast::grok-4.6,Grok 4.6,xhigh,Cursor Ultra (Fast),200,0.06506,44.1998,37608
+devin_max::gpt-6-astra,GPT-6 Astra,high,Devin Max,200,0.14265,50.9191,11795
+devin_max::gpt-6-astra,GPT-6 Astra,low,Devin Max,200,0.14265,45.7819,4433
+devin_max::gpt-6-astra,GPT-6 Astra,max,Devin Max,200,0.14265,52.6737,27206
+devin_max::gpt-6-astra,GPT-6 Astra,medium,Devin Max,200,0.14265,49.5704,9590
+devin_max::gpt-6-astra,GPT-6 Astra,xhigh,Devin Max,200,0.14265,52.3863,16901
 glm_coding_lite_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Lite,18,0.05678,44.8557,71178
 glm_coding_lite_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Lite,18,0.01871,41.9074,68673
 glm_coding_lite_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Lite (yearly),12.6,0.03975,44.8557,71178
@@ -83,38 +103,47 @@ glm_coding_pro_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Pro,80,0.04199,44.8557,71
 glm_coding_pro_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro,80,0.01386,41.9074,68673
 glm_coding_pro_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Pro (yearly),56,0.0294,44.8557,71178
 glm_coding_pro_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro (yearly),56,0.0097,41.9074,68673
-ollama_max::deepseek-v4-flash,DeepSeek V4 Flash,max,Ollama Max,100,0.00462,34.5282,62054
-ollama_max::deepseek-v4-pro,DeepSeek V4 Pro,max,Ollama Max,100,0.01419,36.2829,55154
-ollama_max::glm-5.3,GLM 5.3,max,Ollama Max,100,0.09967,44.8557,71178
-ollama_max::glm-5.3-flash,GLM 5.3 Flash,none,Ollama Max,100,0.01141,41.9074,68673
-ollama_max::kimi-k3,Kimi K3,max,Ollama Max,100,0.1365,43.7842,48455
-ollama_pro::deepseek-v4-flash,DeepSeek V4 Flash,max,Ollama Pro,20,0.00462,34.5282,62054
-ollama_pro::deepseek-v4-pro,DeepSeek V4 Pro,max,Ollama Pro,20,0.01419,36.2829,55154
-ollama_pro::glm-5.3,GLM 5.3,max,Ollama Pro,20,0.09965,44.8557,71178
-ollama_pro::glm-5.3-flash,GLM 5.3 Flash,none,Ollama Pro,20,0.01141,41.9074,68673
-ollama_pro::kimi-k3,Kimi K3,max,Ollama Pro,20,0.13652,43.7842,48455
-opencode_go::deepseek-v4-pro,DeepSeek V4 Pro,max,OpenCode Go,10,0.02838,36.2829,55154
-opencode_go::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,OpenCode Go,10,0.0055,39.545442472527,88574
-opencode_go::glm-5.3,GLM 5.3,max,OpenCode Go,10,0.1992,44.8557,71178
-opencode_go::glm-5.3-flash,GLM 5.3 Flash,none,OpenCode Go,10,0.02282,41.9074,68673
-opencode_go::gpt-5.6-luna,GPT 5.6 Luna,max,OpenCode Go,10,0.01867,37.5048,41235
-opencode_go::grok-4.6,Grok 4.6,high,OpenCode Go,10,0.36765,44.405,35835
-opencode_go::grok-4.6,Grok 4.6,medium,OpenCode Go,10,0.36765,43.0112,28466
-opencode_go::grok-4.6,Grok 4.6,xhigh,OpenCode Go,10,0.36765,44.2702,37608
-opencode_go::kimi-k3,Kimi K3,max,OpenCode Go,10,0.27322,43.7842,48455
+google_ai_pro_us::gemini-3.8-flash,Gemini 3.8 Flash,high,Google AI Pro,19.99,0.00892,40.9262,71003
+google_ai_ultra_20x_us::gemini-3.8-flash,Gemini 3.8 Flash,high,Google AI Ultra 20x,199.99,0.00446,40.9262,71003
+google_ai_ultra_5x_us::gemini-3.8-flash,Gemini 3.8 Flash,high,Google AI Ultra 5x,99.99,0.00892,40.9262,71003
+ollama_max::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Ollama Max,100,0.00275,39.4562,88574
+ollama_max::glm-5.3,GLM 5.3,max,Ollama Max,100,0.09967,44.7774,71178
+ollama_max::glm-5.3-flash,GLM 5.3 Flash,none,Ollama Max,100,0.01141,41.8075,68673
+ollama_max::kimi-k3,Kimi K3,max,Ollama Max,100,0.1365,43.5938,48455
+ollama_pro::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Ollama Pro,20,0.00275,39.4562,88574
+ollama_pro::glm-5.3,GLM 5.3,max,Ollama Pro,20,0.09965,44.7774,71178
+ollama_pro::glm-5.3-flash,GLM 5.3 Flash,none,Ollama Pro,20,0.01141,41.8075,68673
+ollama_pro::kimi-k3,Kimi K3,max,Ollama Pro,20,0.13652,43.5938,48455
+opencode_go::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,OpenCode Go,10,0.0055,39.4562,88574
+opencode_go::glm-5.3,GLM 5.3,max,OpenCode Go,10,0.1992,44.7774,71178
+opencode_go::glm-5.3-flash,GLM 5.3 Flash,none,OpenCode Go,10,0.02282,41.8075,68673
+opencode_go::gpt-5.6-luna,GPT 5.6 Luna,max,OpenCode Go,10,0.01867,37.3244,41235
+opencode_go::grok-4.6,Grok 4.6,high,OpenCode Go,10,0.36765,44.3113,35835
+opencode_go::grok-4.6,Grok 4.6,medium,OpenCode Go,10,0.36765,42.8363,28466
+opencode_go::grok-4.6,Grok 4.6,xhigh,OpenCode Go,10,0.36765,44.1998,37608
+opencode_go::grok-4.7,Grok 4.7,high,OpenCode Go,10,0.36765,46.3322,65902
+opencode_go::grok-4.7,Grok 4.7,xhigh,OpenCode Go,10,0.36765,46.4466,80561
+opencode_go::kimi-k3,Kimi K3,max,OpenCode Go,10,0.27322,43.5938,48455
+opencode_go::mimo-v2.6-pro,MiMo V2.6 Pro,none,OpenCode Go,10,0.01062,46,64276
 opencode_go::qwen3.8-flash,Qwen3.8 Flash,none,OpenCode Go,10,0.00682,40,107885
-supergrok::grok-4.6,Grok 4.6,high,SuperGrok,30,0.05894,44.405,35835
-supergrok::grok-4.6,Grok 4.6,medium,SuperGrok,30,0.05894,43.0112,28466
-supergrok::grok-4.6,Grok 4.6,xhigh,SuperGrok,30,0.05894,44.2702,37608
-supergrok_heavy::grok-4.6,Grok 4.6,high,SuperGrok Heavy,300,0.05894,44.405,35835
-supergrok_heavy::grok-4.6,Grok 4.6,medium,SuperGrok Heavy,300,0.05894,43.0112,28466
-supergrok_heavy::grok-4.6,Grok 4.6,xhigh,SuperGrok Heavy,300,0.05894,44.2702,37608
-supergrok_lite::grok-4.6,Grok 4.6,high,SuperGrok Lite,10,0.06667,44.405,35835
-supergrok_lite::grok-4.6,Grok 4.6,medium,SuperGrok Lite,10,0.06667,43.0112,28466
-supergrok_lite::grok-4.6,Grok 4.6,xhigh,SuperGrok Lite,10,0.06667,44.2702,37608
-supergrok_plus::grok-4.6,Grok 4.6,high,SuperGrok Plus,100,0.04902,44.405,35835
-supergrok_plus::grok-4.6,Grok 4.6,medium,SuperGrok Plus,100,0.04902,43.0112,28466
-supergrok_plus::grok-4.6,Grok 4.6,xhigh,SuperGrok Plus,100,0.04902,44.2702,37608
+supergrok::grok-4.6,Grok 4.6,high,SuperGrok,30,0.05894,44.3113,35835
+supergrok::grok-4.6,Grok 4.6,medium,SuperGrok,30,0.05894,42.8363,28466
+supergrok::grok-4.6,Grok 4.6,xhigh,SuperGrok,30,0.05894,44.1998,37608
+supergrok::grok-4.7,Grok 4.7,high,SuperGrok,30,0.04464,46.3322,65902
+supergrok::grok-4.7,Grok 4.7,xhigh,SuperGrok,30,0.04464,46.4466,80561
+supergrok_heavy::grok-4.6,Grok 4.6,high,SuperGrok Heavy,300,0.05894,44.3113,35835
+supergrok_heavy::grok-4.6,Grok 4.6,medium,SuperGrok Heavy,300,0.05894,42.8363,28466
+supergrok_heavy::grok-4.6,Grok 4.6,xhigh,SuperGrok Heavy,300,0.05894,44.1998,37608
+supergrok_heavy::grok-4.7,Grok 4.7,high,SuperGrok Heavy,300,0.04464,46.3322,65902
+supergrok_heavy::grok-4.7,Grok 4.7,xhigh,SuperGrok Heavy,300,0.04464,46.4466,80561
+supergrok_lite::grok-4.6,Grok 4.6,high,SuperGrok Lite,10,0.06667,44.3113,35835
+supergrok_lite::grok-4.6,Grok 4.6,medium,SuperGrok Lite,10,0.06667,42.8363,28466
+supergrok_lite::grok-4.6,Grok 4.6,xhigh,SuperGrok Lite,10,0.06667,44.1998,37608
+supergrok_plus::grok-4.6,Grok 4.6,high,SuperGrok Plus,100,0.04902,44.3113,35835
+supergrok_plus::grok-4.6,Grok 4.6,medium,SuperGrok Plus,100,0.04902,42.8363,28466
+supergrok_plus::grok-4.6,Grok 4.6,xhigh,SuperGrok Plus,100,0.04902,44.1998,37608
+supergrok_plus::grok-4.7,Grok 4.7,high,SuperGrok Plus,100,0.03717,46.3322,65902
+supergrok_plus::grok-4.7,Grok 4.7,xhigh,SuperGrok Plus,100,0.03717,46.4466,80561
 supergrok_plus_yearly::grok-4.6,Grok 4.6,high,SuperGrok Plus (yearly),83.33,0.04085,44.405,35835
 supergrok_plus_yearly::grok-4.6,Grok 4.6,medium,SuperGrok Plus (yearly),83.33,0.04085,43.0112,28466
 supergrok_plus_yearly::grok-4.6,Grok 4.6,xhigh,SuperGrok Plus (yearly),83.33,0.04085,44.2702,37608

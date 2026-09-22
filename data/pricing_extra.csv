@@ -1,20 +1,4 @@
 id,model,effort,plan,price_usd,real_usd_per_mtok,score,tok_per_task
-chatgpt_plus::gpt-6-astra,GPT 6 Astra,high,ChatGPT Plus,20,0.12579,51.0480721636152,11795
-chatgpt_plus::gpt-6-astra,GPT 6 Astra,low,ChatGPT Plus,20,0.12579,45.9944993120341,4433
-chatgpt_plus::gpt-6-astra,GPT 6 Astra,max,ChatGPT Plus,20,0.12579,52.814069395513,27206
-chatgpt_plus::gpt-6-astra,GPT 6 Astra,medium,ChatGPT Plus,20,0.12579,49.6685363034369,9590
-chatgpt_plus::gpt-6-astra,GPT 6 Astra,xhigh,ChatGPT Plus,20,0.12579,52.5059027108782,16901
-chatgpt_pro_20x::gpt-6-astra,GPT 6 Astra,high,ChatGPT Pro 20x,200,0.04160,51.0480721636152,11795
-chatgpt_pro_20x::gpt-6-astra,GPT 6 Astra,low,ChatGPT Pro 20x,200,0.04160,45.9944993120341,4433
-chatgpt_pro_20x::gpt-6-astra,GPT 6 Astra,max,ChatGPT Pro 20x,200,0.04160,52.814069395513,27206
-chatgpt_pro_20x::gpt-6-astra,GPT 6 Astra,medium,ChatGPT Pro 20x,200,0.04160,49.6685363034369,9590
-chatgpt_pro_20x::gpt-6-astra,GPT 6 Astra,xhigh,ChatGPT Pro 20x,200,0.04160,52.5059027108782,16901
-chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,high,ChatGPT Pro 5x,100,0.12579,51.0480721636152,11795
-chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,low,ChatGPT Pro 5x,100,0.12579,45.9944993120341,4433
-chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,max,ChatGPT Pro 5x,100,0.12579,52.814069395513,27206
-chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,medium,ChatGPT Pro 5x,100,0.12579,49.6685363034369,9590
-chatgpt_pro_5x::gpt-6-astra,GPT 6 Astra,xhigh,ChatGPT Pro 5x,100,0.12579,52.5059027108782,16901
-command_code_goat::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Command Code GOAT,10,0.00206,39.545442472527,88574
 cursor_pro_plus_yearly::grok-4.6,Grok 4.6,high,Cursor Pro+ (yearly),48,0.02326,44.405,35835
 cursor_pro_plus_yearly::grok-4.6,Grok 4.6,medium,Cursor Pro+ (yearly),48,0.02326,43.0112,28466
 cursor_pro_plus_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Pro+ (yearly),48,0.02326,44.2702,37608
@@ -36,7 +20,6 @@ glm_coding_pro_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Pro,80,0.04199,44.8557,71
 glm_coding_pro_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro,80,0.01386,41.9074,68673
 glm_coding_pro_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Pro (yearly),56,0.0294,44.8557,71178
 glm_coding_pro_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro (yearly),56,0.0097,41.9074,68673
-opencode_go::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,OpenCode Go,10,0.0055,39.545442472527,88574
 supergrok_plus_yearly::grok-4.6,Grok 4.6,high,SuperGrok Plus (yearly),83.33,0.04085,44.405,35835
 supergrok_plus_yearly::grok-4.6,Grok 4.6,medium,SuperGrok Plus (yearly),83.33,0.04085,43.0112,28466
 supergrok_plus_yearly::grok-4.6,Grok 4.6,xhigh,SuperGrok Plus (yearly),83.33,0.04085,44.2702,37608
