@@ -8,6 +8,9 @@ chatgpt_plus::gpt-6-astra,GPT-6 Astra,low,ChatGPT Plus,20,0.12579,45.7819,4433
 chatgpt_plus::gpt-6-astra,GPT-6 Astra,max,ChatGPT Plus,20,0.12579,52.6737,27206
 chatgpt_plus::gpt-6-astra,GPT-6 Astra,medium,ChatGPT Plus,20,0.12579,49.5704,9590
 chatgpt_plus::gpt-6-astra,GPT-6 Astra,xhigh,ChatGPT Plus,20,0.12579,52.3863,16901
+chatgpt_plus::gpt-6-sol,GPT-6 Sol,high,ChatGPT Plus,20,0.03247,42.8215513642985,10232
+chatgpt_plus::gpt-6-sol,GPT-6 Sol,medium,ChatGPT Plus,20,0.03247,39.7820971749522,6478
+chatgpt_plus::gpt-6-sol,GPT-6 Sol,xhigh,ChatGPT Plus,20,0.03247,44.1009705516407,16013
 chatgpt_pro_20x::gpt-5.6-luna,GPT 5.6 Luna,max,ChatGPT Pro 20x,200,0.00133,37.3244,41235
 chatgpt_pro_20x::gpt-5.6-sol,GPT 5.6 Sol,high,ChatGPT Pro 20x,200,0.0155,42.3461,13250
 chatgpt_pro_20x::gpt-5.6-sol,GPT 5.6 Sol,medium,ChatGPT Pro 20x,200,0.0155,39.2364,7874
@@ -17,6 +20,9 @@ chatgpt_pro_20x::gpt-6-astra,GPT-6 Astra,low,ChatGPT Pro 20x,200,0.05247,45.7819
 chatgpt_pro_20x::gpt-6-astra,GPT-6 Astra,max,ChatGPT Pro 20x,200,0.05247,52.6737,27206
 chatgpt_pro_20x::gpt-6-astra,GPT-6 Astra,medium,ChatGPT Pro 20x,200,0.05247,49.5704,9590
 chatgpt_pro_20x::gpt-6-astra,GPT-6 Astra,xhigh,ChatGPT Pro 20x,200,0.05247,52.3863,16901
+chatgpt_pro_20x::gpt-6-sol,GPT-6 Sol,high,ChatGPT Pro 20x,200,0.0155,42.8215513642985,10232
+chatgpt_pro_20x::gpt-6-sol,GPT-6 Sol,medium,ChatGPT Pro 20x,200,0.0155,39.7820971749522,6478
+chatgpt_pro_20x::gpt-6-sol,GPT-6 Sol,xhigh,ChatGPT Pro 20x,200,0.0155,44.1009705516407,16013
 chatgpt_pro_5x::gpt-5.6-luna,GPT 5.6 Luna,max,ChatGPT Pro 5x,100,0.00266,37.3244,41235
 chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,high,ChatGPT Pro 5x,100,0.03247,42.3461,13250
 chatgpt_pro_5x::gpt-5.6-sol,GPT 5.6 Sol,medium,ChatGPT Pro 5x,100,0.03247,39.2364,7874
@@ -26,15 +32,30 @@ chatgpt_pro_5x::gpt-6-astra,GPT-6 Astra,low,ChatGPT Pro 5x,100,0.10989,45.7819,4
 chatgpt_pro_5x::gpt-6-astra,GPT-6 Astra,max,ChatGPT Pro 5x,100,0.10989,52.6737,27206
 chatgpt_pro_5x::gpt-6-astra,GPT-6 Astra,medium,ChatGPT Pro 5x,100,0.10989,49.5704,9590
 chatgpt_pro_5x::gpt-6-astra,GPT-6 Astra,xhigh,ChatGPT Pro 5x,100,0.10989,52.3863,16901
+chatgpt_pro_5x::gpt-6-sol,GPT-6 Sol,high,ChatGPT Pro 5x,100,0.03247,42.8215513642985,10232
+chatgpt_pro_5x::gpt-6-sol,GPT-6 Sol,medium,ChatGPT Pro 5x,100,0.03247,39.7820971749522,6478
+chatgpt_pro_5x::gpt-6-sol,GPT-6 Sol,xhigh,ChatGPT Pro 5x,100,0.03247,44.1009705516407,16013
 claude_max_20x::claude-opus-5,Claude Opus 5,high,Claude Max 20x (9/14+),200,0.01274,48.1219,46239
 claude_max_20x::claude-opus-5,Claude Opus 5,medium,Claude Max 20x (9/14+),200,0.01274,44.8253,28977
 claude_max_20x::claude-opus-5,Claude Opus 5,xhigh,Claude Max 20x (9/14+),200,0.01274,49.6774,60655
+claude_max_20x::claude-opus-5.5,Claude Opus 5.5,high,Claude Max 20x (9/14+),200,0.01274,53.5831959822067,35584
+claude_max_20x::claude-opus-5.5,Claude Opus 5.5,low,Claude Max 20x (9/14+),200,0.01274,42.3077781466168,10151
+claude_max_20x::claude-opus-5.5,Claude Opus 5.5,medium,Claude Max 20x (9/14+),200,0.01274,51.2434931792768,25745
+claude_max_20x::claude-opus-5.5,Claude Opus 5.5,xhigh,Claude Max 20x (9/14+),200,0.01274,55.9873505840139,65667
 claude_max_5x::claude-opus-5,Claude Opus 5,high,Claude Max 5x (9/14+),100,0.01274,48.1219,46239
 claude_max_5x::claude-opus-5,Claude Opus 5,medium,Claude Max 5x (9/14+),100,0.01274,44.8253,28977
 claude_max_5x::claude-opus-5,Claude Opus 5,xhigh,Claude Max 5x (9/14+),100,0.01274,49.6774,60655
+claude_max_5x::claude-opus-5.5,Claude Opus 5.5,high,Claude Max 5x (9/14+),100,0.01274,53.5831959822067,35584
+claude_max_5x::claude-opus-5.5,Claude Opus 5.5,low,Claude Max 5x (9/14+),100,0.01274,42.3077781466168,10151
+claude_max_5x::claude-opus-5.5,Claude Opus 5.5,medium,Claude Max 5x (9/14+),100,0.01274,51.2434931792768,25745
+claude_max_5x::claude-opus-5.5,Claude Opus 5.5,xhigh,Claude Max 5x (9/14+),100,0.01274,55.9873505840139,65667
 claude_pro::claude-opus-5,Claude Opus 5,high,Claude Pro,20,0.01065,48.1219,46239
 claude_pro::claude-opus-5,Claude Opus 5,medium,Claude Pro,20,0.01065,44.8253,28977
 claude_pro::claude-opus-5,Claude Opus 5,xhigh,Claude Pro,20,0.01065,49.6774,60655
+claude_pro::claude-opus-5.5,Claude Opus 5.5,high,Claude Pro,20,0.01065,53.5831959822067,35584
+claude_pro::claude-opus-5.5,Claude Opus 5.5,low,Claude Pro,20,0.01065,42.3077781466168,10151
+claude_pro::claude-opus-5.5,Claude Opus 5.5,medium,Claude Pro,20,0.01065,51.2434931792768,25745
+claude_pro::claude-opus-5.5,Claude Opus 5.5,xhigh,Claude Pro,20,0.01065,55.9873505840139,65667
 command_code_goat::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Command Code GOAT,10,0.00206,39.4562,88574
 command_code_goat::gemini-3.8-flash,Gemini 3.8 Flash,high,Command Code GOAT,10,0.05118,40.9262,71003
 command_code_goat::glm-5.3,GLM 5.3,max,Command Code GOAT,10,0.14948,44.7774,71178
@@ -43,6 +64,9 @@ command_code_goat::gpt-5.6-luna,GPT 5.6 Luna,max,Command Code GOAT,10,0.014,37.3
 command_code_goat::gpt-5.6-sol,GPT 5.6 Sol,high,Command Code GOAT,10,0.1,42.3461,13250
 command_code_goat::gpt-5.6-sol,GPT 5.6 Sol,medium,Command Code GOAT,10,0.1,39.2364,7874
 command_code_goat::gpt-5.6-sol,GPT 5.6 Sol,xhigh,Command Code GOAT,10,0.1,44.0089,19576
+command_code_goat::gpt-6-sol,GPT-6 Sol,high,Command Code GOAT,10,0.1,42.8215513642985,10232
+command_code_goat::gpt-6-sol,GPT-6 Sol,medium,Command Code GOAT,10,0.1,39.7820971749522,6478
+command_code_goat::gpt-6-sol,GPT-6 Sol,xhigh,Command Code GOAT,10,0.1,44.1009705516407,16013
 command_code_goat::grok-4.6,Grok 4.6,high,Command Code GOAT,10,0.27548,44.3113,35835
 command_code_goat::grok-4.6,Grok 4.6,medium,Command Code GOAT,10,0.27548,42.8363,28466
 command_code_goat::grok-4.6,Grok 4.6,xhigh,Command Code GOAT,10,0.27548,44.1998,37608
@@ -94,6 +118,14 @@ glm_coding_pro_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro (
 google_ai_pro_us::gemini-3.8-flash,Gemini 3.8 Flash,high,Google AI Pro,19.99,0.00892,40.9262,71003
 google_ai_ultra_20x_us::gemini-3.8-flash,Gemini 3.8 Flash,high,Google AI Ultra 20x,199.99,0.00446,40.9262,71003
 google_ai_ultra_5x_us::gemini-3.8-flash,Gemini 3.8 Flash,high,Google AI Ultra 5x,99.99,0.00892,40.9262,71003
+mimo_token_lite_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Lite (Day),6,0.01609,46,64276
+mimo_token_lite_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Lite (Night 0.8x),6,0.01288,46,64276
+mimo_token_max_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Max (Day),100,0.0134,46,64276
+mimo_token_max_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Max (Night 0.8x),100,0.01072,46,64276
+mimo_token_pro_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Pro (Day),50,0.01446,46,64276
+mimo_token_pro_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Pro (Night 0.8x),50,0.01157,46,64276
+mimo_token_standard_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Standard (Day),16,0.01598,46,64276
+mimo_token_standard_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Standard (Night 0.8x),16,0.01279,46,64276
 ollama_max::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Ollama Max,100,0.00275,39.4562,88574
 ollama_max::glm-5.3,GLM 5.3,max,Ollama Max,100,0.09967,44.7774,71178
 ollama_max::glm-5.3-flash,GLM 5.3 Flash,none,Ollama Max,100,0.01141,41.8075,68673
