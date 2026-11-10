@@ -1,60 +1,24 @@
 id,model,effort,plan,price_usd,real_usd_per_mtok,score,tok_per_task
-chatgpt_plus::gpt-6-sol,GPT-6 Sol,high,ChatGPT Plus,20,0.03247,42.8215513642985,10232
-chatgpt_plus::gpt-6-sol,GPT-6 Sol,medium,ChatGPT Plus,20,0.03247,39.7820971749522,6478
-chatgpt_plus::gpt-6-sol,GPT-6 Sol,xhigh,ChatGPT Plus,20,0.03247,44.1009705516407,16013
-chatgpt_pro_20x::gpt-6-sol,GPT-6 Sol,high,ChatGPT Pro 20x,200,0.0155,42.8215513642985,10232
-chatgpt_pro_20x::gpt-6-sol,GPT-6 Sol,medium,ChatGPT Pro 20x,200,0.0155,39.7820971749522,6478
-chatgpt_pro_20x::gpt-6-sol,GPT-6 Sol,xhigh,ChatGPT Pro 20x,200,0.0155,44.1009705516407,16013
-chatgpt_pro_5x::gpt-6-sol,GPT-6 Sol,high,ChatGPT Pro 5x,100,0.03247,42.8215513642985,10232
-chatgpt_pro_5x::gpt-6-sol,GPT-6 Sol,medium,ChatGPT Pro 5x,100,0.03247,39.7820971749522,6478
-chatgpt_pro_5x::gpt-6-sol,GPT-6 Sol,xhigh,ChatGPT Pro 5x,100,0.03247,44.1009705516407,16013
-claude_max_20x::claude-opus-5.5,Claude Opus 5.5,high,Claude Max 20x (9/14+),200,0.01274,53.5831959822067,35584
-claude_max_20x::claude-opus-5.5,Claude Opus 5.5,low,Claude Max 20x (9/14+),200,0.01274,42.3077781466168,10151
-claude_max_20x::claude-opus-5.5,Claude Opus 5.5,medium,Claude Max 20x (9/14+),200,0.01274,51.2434931792768,25745
-claude_max_20x::claude-opus-5.5,Claude Opus 5.5,xhigh,Claude Max 20x (9/14+),200,0.01274,55.9873505840139,65667
-claude_max_5x::claude-opus-5.5,Claude Opus 5.5,high,Claude Max 5x (9/14+),100,0.01274,53.5831959822067,35584
-claude_max_5x::claude-opus-5.5,Claude Opus 5.5,low,Claude Max 5x (9/14+),100,0.01274,42.3077781466168,10151
-claude_max_5x::claude-opus-5.5,Claude Opus 5.5,medium,Claude Max 5x (9/14+),100,0.01274,51.2434931792768,25745
-claude_max_5x::claude-opus-5.5,Claude Opus 5.5,xhigh,Claude Max 5x (9/14+),100,0.01274,55.9873505840139,65667
-claude_pro::claude-opus-5.5,Claude Opus 5.5,high,Claude Pro,20,0.01065,53.5831959822067,35584
-claude_pro::claude-opus-5.5,Claude Opus 5.5,low,Claude Pro,20,0.01065,42.3077781466168,10151
-claude_pro::claude-opus-5.5,Claude Opus 5.5,medium,Claude Pro,20,0.01065,51.2434931792768,25745
-claude_pro::claude-opus-5.5,Claude Opus 5.5,xhigh,Claude Pro,20,0.01065,55.9873505840139,65667
-command_code_goat::gpt-6-sol,GPT-6 Sol,high,Command Code GOAT,10,0.1,42.8215513642985,10232
-command_code_goat::gpt-6-sol,GPT-6 Sol,medium,Command Code GOAT,10,0.1,39.7820971749522,6478
-command_code_goat::gpt-6-sol,GPT-6 Sol,xhigh,Command Code GOAT,10,0.1,44.1009705516407,16013
-cursor_pro_plus_yearly::grok-4.6,Grok 4.6,high,Cursor Pro+ (yearly),48,0.02326,44.3113,35835
-cursor_pro_plus_yearly::grok-4.6,Grok 4.6,medium,Cursor Pro+ (yearly),48,0.02326,42.8363,28466
-cursor_pro_plus_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Pro+ (yearly),48,0.02326,44.1998,37608
-cursor_pro_yearly::grok-4.6,Grok 4.6,high,Cursor Pro (yearly),16,0.03404,44.3113,35835
-cursor_pro_yearly::grok-4.6,Grok 4.6,medium,Cursor Pro (yearly),16,0.03404,42.8363,28466
-cursor_pro_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Pro (yearly),16,0.03404,44.1998,37608
-cursor_teams_premium_yearly::grok-4.6,Grok 4.6,high,Cursor Teams Premium (yearly),96,0.02791,44.3113,35835
-cursor_teams_premium_yearly::grok-4.6,Grok 4.6,medium,Cursor Teams Premium (yearly),96,0.02791,42.8363,28466
-cursor_teams_premium_yearly::grok-4.6,Grok 4.6,xhigh,Cursor Teams Premium (yearly),96,0.02791,44.1998,37608
-glm_coding_lite_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Lite,18,0.05678,44.8557,71178
-glm_coding_lite_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Lite,18,0.01871,41.9074,68673
-glm_coding_lite_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Lite (yearly),12.6,0.03975,44.8557,71178
-glm_coding_lite_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Lite (yearly),12.6,0.0131,41.9074,68673
-glm_coding_max_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Max,168,0.0378,44.8557,71178
-glm_coding_max_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Max,168,0.01247,41.9074,68673
-glm_coding_max_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Max (yearly),117.6,0.02646,44.8557,71178
-glm_coding_max_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Max (yearly),117.6,0.00873,41.9074,68673
-glm_coding_pro_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Pro,80,0.04199,44.8557,71178
-glm_coding_pro_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro,80,0.01386,41.9074,68673
-glm_coding_pro_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Pro (yearly),56,0.0294,44.8557,71178
-glm_coding_pro_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro (yearly),56,0.0097,41.9074,68673
-mimo_token_lite_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Lite (Day),6,0.01609,46,64276
-mimo_token_lite_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Lite (Night 0.8x),6,0.01288,46,64276
-mimo_token_max_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Max (Day),100,0.0134,46,64276
-mimo_token_max_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Max (Night 0.8x),100,0.01072,46,64276
-mimo_token_pro_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Pro (Day),50,0.01446,46,64276
-mimo_token_pro_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Pro (Night 0.8x),50,0.01157,46,64276
-mimo_token_standard_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Standard (Day),16,0.01598,46,64276
-mimo_token_standard_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Standard (Night 0.8x),16,0.01279,46,64276
-supergrok_plus_yearly::grok-4.6,Grok 4.6,high,SuperGrok Plus (yearly),83.33,0.04085,44.3113,35835
-supergrok_plus_yearly::grok-4.6,Grok 4.6,medium,SuperGrok Plus (yearly),83.33,0.04085,42.8363,28466
-supergrok_plus_yearly::grok-4.6,Grok 4.6,xhigh,SuperGrok Plus (yearly),83.33,0.04085,44.1998,37608
-supergrok_yearly::grok-4.6,Grok 4.6,high,SuperGrok (yearly),25,0.04912,44.3113,35835
-supergrok_yearly::grok-4.6,Grok 4.6,medium,SuperGrok (yearly),25,0.04912,42.8363,28466
-supergrok_yearly::grok-4.6,Grok 4.6,xhigh,SuperGrok (yearly),25,0.04912,44.1998,37608
+glm_coding_lite_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Lite,18,0.05678,31.653381843882,118987
+glm_coding_lite_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Lite,18,0.01871,27.803889160883,134205
+glm_coding_lite_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Lite (yearly),12.6,0.03975,31.653381843882,118987
+glm_coding_lite_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Lite (yearly),12.6,0.0131,27.803889160883,134205
+glm_coding_max_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Max,168,0.0378,31.653381843882,118987
+glm_coding_max_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Max,168,0.01247,27.803889160883,134205
+glm_coding_max_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Max (yearly),117.6,0.02646,31.653381843882,118987
+glm_coding_max_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Max (yearly),117.6,0.00873,27.803889160883,134205
+glm_coding_pro_new_mid::glm-5.3,GLM 5.3,max,GLM Coding Pro,80,0.04199,31.653381843882,118987
+glm_coding_pro_new_mid::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro,80,0.01386,27.803889160883,134205
+glm_coding_pro_new_mid_yearly::glm-5.3,GLM 5.3,max,GLM Coding Pro (yearly),56,0.0294,31.653381843882,118987
+glm_coding_pro_new_mid_yearly::glm-5.3-flash,GLM 5.3 Flash,none,GLM Coding Pro (yearly),56,0.0097,27.803889160883,134205
+mimo_token_lite_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Lite (Day),6,0.01609,29.8897833093321,121073
+mimo_token_lite_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Lite (Night 0.8x),6,0.01288,29.8897833093321,121073
+mimo_token_max_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Max (Day),100,0.0134,29.8897833093321,121073
+mimo_token_max_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Max (Night 0.8x),100,0.01072,29.8897833093321,121073
+mimo_token_pro_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Pro (Day),50,0.01446,29.8897833093321,121073
+mimo_token_pro_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Pro (Night 0.8x),50,0.01157,29.8897833093321,121073
+mimo_token_standard_day::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Standard (Day),16,0.01598,29.8897833093321,121073
+mimo_token_standard_night::mimo-v2.6-pro,MiMo V2.6 Pro,none,MiMo Token Plan Standard (Night 0.8x),16,0.01279,29.8897833093321,121073
+muse_code_everyday::muse-spark-1.3,Muse Spark 1.3,max,Muse Code Everyday (estimated),5,0.00865394125210167,36.6172039139368,91114
+muse_code_high::muse-spark-1.3,Muse Spark 1.3,max,Muse Code High (estimated),15,0.00519236475126100,36.6172039139368,91114
+muse_code_power::muse-spark-1.3,Muse Spark 1.3,max,Muse Code Power (estimated),50,0.00432697062605084,36.6172039139368,91114

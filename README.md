@@ -30,12 +30,20 @@ Filter the results, e.g. serious plans only:
 python3 work_per_dollar.py --min-tasks 50000 --min-score 42
 ```
 
+Each row carries a `Value bar` scaled to the best row, so the ranking is
+visible at a glance. On a narrow terminal the bar is hidden (the script says
+so); widen the window or pass `--chart-width N` / `--no-chart`.
+
 ## Data
 
 Pricing points come from the excellent open project
 [FeiZhuLulu/real-api-pricing](https://github.com/FeiZhuLulu/real-api-pricing)
-(AA Intelligence Index board). Tokens-per-task values come from Artificial
-Analysis measurements, curated by hand in `data/aa_tok_per_task.csv`.
+(AA Intelligence Index board). Scores and tokens-per-task both come from
+Artificial Analysis, curated by hand in `data/aa_tok_per_task.csv`.
+
+Muse Code subscription rows are marked `(estimated)`; their sources,
+calculations, and assumptions are documented in
+[data/pricing_estimates.md](data/pricing_estimates.md).
 
 See [AGENTS.md](AGENTS.md) for the full pipeline documentation: file schemas,
 curation rules, and how to add a model or plan.

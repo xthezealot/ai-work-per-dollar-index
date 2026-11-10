@@ -43,10 +43,15 @@ payload, not the UI.
    variant's or model's score.
 
 4. Where to write the values depends on the target (ai-work-per-dollar-index
-   project): `tokPerTask` goes to `data/aa_tok_per_task.csv` (columns
-   `model,effort,tok_per_task`, slug + normalized effort), the exact score goes
-   to `data/pricing_extra.csv` (`score` column, keyed by point `id` + `effort`).
-   After editing those files, `fetch_pricing.py` must be re-run there.
+   project): both go to the same row of `data/aa_tok_per_task.csv` — columns
+   `model,effort,score,tok_per_task` (slug + normalized effort). That table is
+   the authoritative AA basis for the index; `data/pricing_extra.csv` must mirror
+   its `score`/`tok_per_task` values for any model it lists. After editing,
+   `fetch_pricing.py` must be re-run there.
+
+   Older AA scores are not comparable with current ones: AA re-versions its
+   index, so scores and tokens move together. Re-extract the whole table when
+   re-basing rather than mixing revisions.
 
 ## Notes
 

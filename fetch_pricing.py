@@ -11,9 +11,12 @@ All curation happens here, so work_per_dollar.py stays a pure calculator:
   * only points billed in USD or EUR are kept
   * a row is emitted only when its (model, effort) exists in
     data/aa_tok_per_task.csv — that file is the model list; there is no
-    hardcoded one. Models without AA tokens-per-task data are omitted
+    hardcoded one. It also supplies the AA score and tokens-per-task, which
+    supersede the repo scores (the repo is only used to discover which efforts
+    a point exposes, and to date the benchmark variants)
   * VARIANT_PREFERENCE picks canonical vs dated snapshot benchmark rows
-  * estimated scores are dropped; SCORE_OVERRIDES fills missing scores
+  * estimated scores are dropped; SCORE_OVERRIDES lets the repo-less models
+    reach that effort-discovery step
   * data/pricing_extra.csv is merged in last (rows sharing an id+effort
     overwrite the fetched row, the rest are appended), so work_per_dollar.py
     has this single CSV to read
@@ -55,7 +58,9 @@ KEY_FIELDS = ("id", "effort")
 # ---------------------------------------------------------------------------
 
 # Manually verified AA intelligence scores for models the repo has no score
-# for (the repo never invents scores; neither do we beyond this table).
+# for. Needed only for effort discovery: a point with no candidate score is
+# skipped before the AA table join. The score actually written comes from
+# data/aa_tok_per_task.csv.
 SCORE_OVERRIDES: dict[str, float] = {
     "qwen3.8-flash": 40.0,
 }
@@ -68,6 +73,12 @@ DATED_VARIANT_RE = re.compile(r"\b\d{4}\b")
 VARIANT_PREFERENCE: dict[str, str] = {
     "deepseek-v4-flash": "dated",
     "deepseek-v4-pro": "dated",
+}
+
+# The source labels Qwen3.8 Max's benchmark effort "max", although AA exposes
+# this model without an effort selector. Match our "none" tokens-per-task row.
+EFFORT_ALIASES: dict[tuple[str, str], str] = {
+    ("qwen3.8-max", "max"): "none",
 }
 
 # English plan-label map from the source project's web front-end
@@ -135,9 +146,16 @@ def load_currencies() -> dict[str, str]:
     }
 
 
-def load_tok_per_task() -> dict[tuple[str, str], int]:
+def load_aa_metrics() -> dict[tuple[str, str], tuple[float, int]]:
+    """(model, effort) -> (AA intelligence score, tokens per task).
+
+    This file is the authoritative AA snapshot for both metrics; repo scores
+    are only used to discover which efforts a point exposes.
+    """
     return {
-        (norm_model(row["model"]), norm_effort(row["effort"])): int(row["tok_per_task"])
+        (norm_model(row["model"]), norm_effort(row["effort"])): (
+            float(row["score"]), int(row["tok_per_task"])
+        )
         for row in read_local_csv(AA_TOKENS_CSV)
     }
 
@@ -188,6 +206,7 @@ def curate_point(point: dict, bench_rows: list[dict] | None) -> list[tuple[str, 
         if row["score_is_estimated"].strip().lower() == "true":
             continue
         effort = norm_effort(row["reasoning_effort"])
+        effort = EFFORT_ALIASES.get((slug, effort), effort)
         score_raw = row["score"].strip()
         score = float(score_raw) if score_raw else SCORE_OVERRIDES.get(slug)
         if score is not None:
@@ -206,7 +225,7 @@ def main() -> int:
     points = fetch_csv(POINTS_URL)
     bench_by_point = benchmark_rows_for_board(fetch_csv(BENCHMARK_URL))
     currencies = load_currencies()
-    tok_per_task = load_tok_per_task()
+    aa_metrics = load_aa_metrics()
 
     rows = []
     stats = {"non_usd_eur": 0, "metered": 0, "no_score": 0, "no_tok_per_task": 0}
@@ -219,13 +238,25 @@ def main() -> int:
             continue
         candidates = curate_point(point, bench_by_point.get(point["id"]))
         if not candidates:
+            # The repo has no benchmark row or score for this point (e.g. a
+            # model it has not scored yet). Fall back to the AA table, which is
+            # the authoritative score source and already lists the efforts we
+            # want for every activated model.
+            slug = norm_model(point["model"])
+            candidates = [
+                (effort, score)
+                for (model_slug, effort), (score, _tpt) in aa_metrics.items()
+                if model_slug == slug
+            ]
+        if not candidates:
             stats["no_score"] += 1  # no benchmark row / no override for this point
             continue
-        for effort, score in candidates:
-            tpt = tok_per_task.get((norm_model(point["model"]), effort))
-            if tpt is None:
+        for effort, _repo_score in candidates:
+            metrics = aa_metrics.get((norm_model(point["model"]), effort))
+            if metrics is None:
                 stats["no_tok_per_task"] += 1
                 continue
+            score, tpt = metrics
             rows.append({
                 "id": point["id"],
                 "model": point["model_display"],
@@ -233,7 +264,7 @@ def main() -> int:
                 "plan": display_plan(point["plan"]),
                 "price_usd": f"{float(point['price_usd']):g}",
                 "real_usd_per_mtok": point["real_usd_per_mtok"],
-                "score": f"{score:g}",
+                "score": repr(score),
                 "tok_per_task": tpt,
             })
 

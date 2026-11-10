@@ -19,6 +19,7 @@ import argparse
 import csv
 import os
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -104,7 +105,16 @@ def parse_args(argv=None) -> argparse.Namespace:
                         help="hide results with an AA intelligence score below N (default: no limit)")
     parser.add_argument("--max-price", type=nonneg_float, default=0.0, metavar="N",
                         help="hide results costing more than N per month (default: no limit)")
-    return parser.parse_args(argv)
+    parser.add_argument("--chart-width", type=int, default=DEFAULT_BAR_WIDTH, metavar="N",
+                        help=f"width of the value bar column in characters, 0 to hide it (default: {DEFAULT_BAR_WIDTH})")
+    parser.add_argument("--no-chart", action="store_true",
+                        help="hide the value bar column (same as --chart-width 0)")
+    args = parser.parse_args(argv)
+    if args.chart_width < 0:
+        parser.error("--chart-width must be >= 0")
+    if args.no_chart:
+        args.chart_width = 0
+    return args
 
 
 # ---------------------------------------------------------------------------
@@ -114,12 +124,46 @@ def parse_args(argv=None) -> argparse.Namespace:
 HEADERS = ["Rank", "Model", "Effort", "Plan", "Price/mo", "Score", "Tok/task", "Tasks/month", "Value"]
 ALIGNS = ["r", "l", "l", "l", "r", "r", "r", "r", "r"]
 
+DEFAULT_BAR_WIDTH = 16
+MIN_BAR_WIDTH = 5
+BAR_CHAR = "█"
+PARTIAL_BLOCKS = "▏▎▍▌▋▊▉"
 
-def render_row(cells, widths, color_codes=None):
+
+def render_bar(fraction: float, width: int) -> str:
+    """A `width`-cell bar filled to `fraction` (0..1), with 1/8-cell precision."""
+    exact = max(0.0, min(1.0, fraction)) * width
+    full = int(exact)
+    bar = BAR_CHAR * full
+    if full < width:
+        eighths = int((exact - full) * 8)
+        bar += PARTIAL_BLOCKS[eighths - 1] if 0 < eighths < 8 else " "
+    if exact > 0 and not bar.strip():
+        bar = PARTIAL_BLOCKS[0] + bar[1:]  # smallest visible sliver
+    return bar.ljust(width)[:width]
+
+
+def fit_bar_width(requested: int, table_width: int) -> int:
+    """Shrink the bar column to the terminal when one is attached."""
+    if requested <= 0:
+        return 0
+    if not sys.stdout.isatty():
+        return requested
+    room = shutil.get_terminal_size().columns - table_width - 2
+    return 0 if room < MIN_BAR_WIDTH else min(requested, room)
+
+
+def render_row(cells, widths, aligns, color_codes=None, cell_colors=None):
+    last = len(cells) - 1
     parts = []
     for i, cell in enumerate(cells):
-        padded = cell.rjust(widths[i]) if ALIGNS[i] == "r" else cell.ljust(widths[i])
-        parts.append(paint(padded, *color_codes) if color_codes else padded)
+        if aligns[i] == "r":
+            padded = cell.rjust(widths[i])
+        else:
+            # no need to pad the trailing column: nothing follows it
+            padded = cell if i == last else cell.ljust(widths[i])
+        codes = (cell_colors or {}).get(i, color_codes)
+        parts.append(paint(padded, *codes) if codes else padded)
     return "  ".join(parts)
 
 
@@ -184,22 +228,39 @@ def main(argv=None) -> int:
             f"{r['value']:,.0f}",
         ])
 
-    widths = [vlen(h) for h in HEADERS]
+    headers = list(HEADERS)
+    aligns = list(ALIGNS)
+    widths = [vlen(h) for h in headers]
     for row in table:
         for i, cell in enumerate(row):
             widths[i] = max(widths[i], vlen(cell))
 
-    print(render_row(HEADERS, widths, ("1", "36")))
+    bar_width = fit_bar_width(args.chart_width, sum(widths) + 2 * (len(widths) - 1))
+    chart_hidden = args.chart_width > 0 and bar_width == 0
+    bar_index = None
+    if bar_width:
+        headers.append("Value bar")
+        aligns.append("l")
+        widths.append(bar_width)
+        bar_index = len(headers) - 1
+        peak = max(r["value"] for r in ranked)
+        for row, r in zip(table, ranked):
+            row.append(render_bar(r["value"] / peak if peak else 0.0, bar_width))
+
+    print(render_row(headers, widths, aligns, ("1", "36")))
     print(paint("─" * (sum(widths) + 2 * (len(widths) - 1)), "2"))
+    bar_colors = {bar_index: ("36",)} if bar_index is not None else None
     for i, row in enumerate(table, 1):
         if i == 1:
-            print(render_row(row, widths, ("1", "32")))
+            print(render_row(row, widths, aligns, ("1", "32"), bar_colors))
         elif i <= 3:
-            print(render_row(row, widths, ("32",)))
+            print(render_row(row, widths, aligns, ("32",), bar_colors))
         else:
-            print(render_row(row, widths))
+            print(render_row(row, widths, aligns, None, bar_colors))
 
     print()
+    if bar_index is not None:
+        print(paint("value bar = this row's value relative to the best row (full bar = best)", "2"))
     print(paint("value = AA intelligence score × (monthly tokens ÷ tok_per_task) ÷ price_usd", "2"))
     print(paint("monthly tokens = price_usd ÷ real_usd_per_mtok × 1,000,000", "2"))
     print(paint("tok_per_task = answer + reasoning tokens per AA Intelligence Index task (data/aa_tok_per_task.csv)", "2"))
@@ -207,6 +268,8 @@ def main(argv=None) -> int:
 
     if malformed:
         print(paint(f"skipped {malformed} malformed rows", "33"))
+    if chart_hidden:
+        print(paint("value bar hidden: terminal too narrow (widen the window or use --chart-width N)", "33"))
     for note in filter_notes:
         print(paint(note, "33"))
     print()
