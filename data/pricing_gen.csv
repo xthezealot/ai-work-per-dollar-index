@@ -8,18 +8,26 @@ claude_max_20x::claude-opus-5.5,Claude Opus 5.5,high,Claude Max 20x (9/14+),200,
 claude_max_20x::claude-opus-5.5,Claude Opus 5.5,low,Claude Max 20x (9/14+),200,0.0063415562,34.752785007759,19060
 claude_max_20x::claude-opus-5.5,Claude Opus 5.5,medium,Claude Max 20x (9/14+),200,0.0063415562,48.2081024960691,43817
 claude_max_20x::claude-opus-5.5,Claude Opus 5.5,xhigh,Claude Max 20x (9/14+),200,0.0063415562,57.4447060170507,103395
+claude_max_20x::claude-sonnet-5.5,Claude Sonnet 5.5,high,Claude Max 20x (9/14+),200,0.0031707781,41.515109087048,58421
+claude_max_20x::claude-sonnet-5.5,Claude Sonnet 5.5,medium,Claude Max 20x (9/14+),200,0.0031707781,30.8195522148431,30746
 claude_max_5x::claude-opus-5.5,Claude Opus 5.5,high,Claude Max 5x (9/14+),100,0.0054543471,51.8359958227294,60071
 claude_max_5x::claude-opus-5.5,Claude Opus 5.5,low,Claude Max 5x (9/14+),100,0.0054543471,34.752785007759,19060
 claude_max_5x::claude-opus-5.5,Claude Opus 5.5,medium,Claude Max 5x (9/14+),100,0.0054543471,48.2081024960691,43817
 claude_max_5x::claude-opus-5.5,Claude Opus 5.5,xhigh,Claude Max 5x (9/14+),100,0.0054543471,57.4447060170507,103395
+claude_max_5x::claude-sonnet-5.5,Claude Sonnet 5.5,high,Claude Max 5x (9/14+),100,0.0027271736,41.515109087048,58421
+claude_max_5x::claude-sonnet-5.5,Claude Sonnet 5.5,medium,Claude Max 5x (9/14+),100,0.0027271736,30.8195522148431,30746
 claude_pro::claude-opus-5.5,Claude Opus 5.5,high,Claude Pro,20,0.0065487885,51.8359958227294,60071
 claude_pro::claude-opus-5.5,Claude Opus 5.5,low,Claude Pro,20,0.0065487885,34.752785007759,19060
 claude_pro::claude-opus-5.5,Claude Opus 5.5,medium,Claude Pro,20,0.0065487885,48.2081024960691,43817
 claude_pro::claude-opus-5.5,Claude Opus 5.5,xhigh,Claude Pro,20,0.0065487885,57.4447060170507,103395
+claude_pro::claude-sonnet-5.5,Claude Sonnet 5.5,high,Claude Pro,20,0.0032743942,41.515109087048,58421
+claude_pro::claude-sonnet-5.5,Claude Sonnet 5.5,medium,Claude Pro,20,0.0032743942,30.8195522148431,30746
 claude_team::claude-opus-5.5,Claude Opus 5.5,high,Claude Team Premium,125,0.0099166997,51.8359958227294,60071
 claude_team::claude-opus-5.5,Claude Opus 5.5,low,Claude Team Premium,125,0.0099166997,34.752785007759,19060
 claude_team::claude-opus-5.5,Claude Opus 5.5,medium,Claude Team Premium,125,0.0099166997,48.2081024960691,43817
 claude_team::claude-opus-5.5,Claude Opus 5.5,xhigh,Claude Team Premium,125,0.0099166997,57.4447060170507,103395
+command_code_goat::claude-sonnet-5.5,Claude Sonnet 5.5,high,Command Code GOAT,10,0.19685039,41.515109087048,58421
+command_code_goat::claude-sonnet-5.5,Claude Sonnet 5.5,medium,Command Code GOAT,10,0.19685039,30.8195522148431,30746
 command_code_goat::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Command Code GOAT,10,0.0013799956,32.5896393532027,138962
 command_code_goat::glm-5.3,GLM 5.3,max,Command Code GOAT,10,0.15455951,31.653381843882,118987
 command_code_goat::glm-5.3-flash,GLM 5.3 Flash,none,Command Code GOAT,10,0.005049995,27.803889160883,134205
@@ -42,10 +50,14 @@ devin_pro::claude-opus-5.5,Claude Opus 5.5,high,Devin Pro,20,0.068259386,51.8359
 devin_pro::claude-opus-5.5,Claude Opus 5.5,low,Devin Pro,20,0.068259386,34.752785007759,19060
 devin_pro::claude-opus-5.5,Claude Opus 5.5,medium,Devin Pro,20,0.068259386,48.2081024960691,43817
 devin_pro::claude-opus-5.5,Claude Opus 5.5,xhigh,Devin Pro,20,0.068259386,57.4447060170507,103395
+devin_pro::claude-sonnet-5.5,Claude Sonnet 5.5,high,Devin Pro,20,0.031055901,41.515109087048,58421
+devin_pro::claude-sonnet-5.5,Claude Sonnet 5.5,medium,Devin Pro,20,0.031055901,30.8195522148431,30746
 droid_max::claude-opus-5.5,Claude Opus 5.5,high,Droid Max,200,0.079176564,51.8359958227294,60071
 droid_max::claude-opus-5.5,Claude Opus 5.5,low,Droid Max,200,0.079176564,34.752785007759,19060
 droid_max::claude-opus-5.5,Claude Opus 5.5,medium,Droid Max,200,0.079176564,48.2081024960691,43817
 droid_max::claude-opus-5.5,Claude Opus 5.5,xhigh,Droid Max,200,0.079176564,57.4447060170507,103395
+droid_max::claude-sonnet-5.5,Claude Sonnet 5.5,high,Droid Max,200,0.039588282,41.515109087048,58421
+droid_max::claude-sonnet-5.5,Claude Sonnet 5.5,medium,Droid Max,200,0.039588282,30.8195522148431,30746
 droid_max::deepseek-v4.1-flash,DeepSeek V4.1 Flash,max,Droid Max,200,0.0059382423,32.5896393532027,138962
 droid_max::glm-5.3,GLM 5.3,max,Droid Max,200,0.027711962,31.653381843882,118987
 droid_max::glm-5.3-flash,GLM 5.3 Flash,none,Droid Max,200,0.0029691211,27.803889160883,134205
